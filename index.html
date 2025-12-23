@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Sale Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+    <header class="navbar">
+        <h1 class="logo">DoggoLand 🐶</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#dogs">Dogs</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+   
+<section class="video-hero">
+    <video autoplay muted loop playsinline controls>
+
+        <source src="videos/dogVideo.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay">
+        <h2>Healthy & Happy Dogs</h2>
+        <p>Find your loyal companion today</p>
+        <a href="#dogs" class="btn">Browse Dogs</a>
+    </div>
+</section>
+
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h2>Find Your Perfect Dog Companion</h2>
+            <p>Healthy, friendly, and lovable dogs looking for a new home.</p>
+            <button>View Available Dogs</button>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/dog1.jpg" alt="Dog">
+        </div>
+    </section>
+
+
+    <section class="dogs" id="dogs">
+        <h2>Available Dogs</h2>
+
+        <div class="dog-cards">
+            <!-- DOG CARD 1 -->
+            <div class="dog-card">
+                <img src="images/dog1.jpg" alt="Dog">
+                <h3>Golden Retriever</h3>
+                <p>Friendly, intelligent, and great with families.</p>
+            </div>
+
+            <!-- DOG CARD 2 -->
+            <div class="dog-card">
+                <img src="images/dog2.jpg" alt="Dog">
+                <h3>German Shepherd</h3>
+                <p>Loyal, confident, and excellent guard dog.</p>
+            </div>
+
+            <!-- DOG CARD 3 -->
+            <div class="dog-card">
+                <img src="images/dog3jpg.jpg" alt="Dog">
+                <h3>Poodle</h3>
+                <p>Smart, active, and hypoallergenic.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+            We are passionate dog lovers dedicated to raising healthy and happy dogs.
+            Our goal is to help every dog find a loving home.
+        </p>
+    </section>
+
+  
+        <!-- EXTRA SECTIONS FOR SCROLLING -->
+    <section class="gallery" id="gallery">
+        <h2>Dog Gallery</h2>
+        <div class="gallery-grid">
+            <img src="images/dog1.jpg" alt="Dog">
+            <img src="images/dog2.jpg" alt="Dog">
+            <img src="images/dog2.jpg" alt="Dog">
+            <img src="images/dog2.jpg" alt="Dog">
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2>Happy Owners</h2>
+        <div class="testimonial-card">
+            <p>"DoggoLand helped me find my best friend. My Golden Retriever is the sweetest!"</p>
+            <span>- Maria, CDO</span>
+        </div>
+        <div class="testimonial-card">
+            <p>"Our German Shepherd is loyal and protective. Thank you DoggoLand!"</p>
+            <span>- John, Manila</span>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>How do I adopt a dog?</h3>
+            <p>Browse our available dogs, contact us, and we’ll guide you through the process.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Are the dogs vaccinated?</h3>
+            <p>Yes, all dogs are vaccinated and health-checked before adoption.</p>
+        </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+        <h2>Join Our Newsletter</h2>
+        <p>Stay updated with new arrivals and adoption stories.</p>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+      <section class="contact" id="contact">
+        <h2>Contact the Owner</h2>
+        <p>Email: owner@doggoland.com</p>
+        <p>Phone: +63 900 000 0000</p>
+    </section>
+
+
+
+    <footer class="footer">
+        <p>© 2025 DoggoLand. All rights reserved.</p>
+    </footer>
+    <!-- Back to Top Button -->
+    <button id="backToTop">⬆ Back to Top</button>
+
+    
+<script> const backToTopBtn = document.getElementById("backToTop"); window.addEventListener("scroll", () => { if (window.scrollY > 300) { backToTopBtn.style.display = "block"; } else { backToTopBtn.style.display = "none"; } }); backToTopBtn.addEventListener("click", () => { window.scrollTo({ top: 0, behavior: "smooth" }); }); </script>
+</body>
+</html>
